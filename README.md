@@ -1,0 +1,1 @@
+Toy app for learning Backbone + Rails. Multiple todo lists with tasks, basic CRUD functionality for both lists and individual tasks.
