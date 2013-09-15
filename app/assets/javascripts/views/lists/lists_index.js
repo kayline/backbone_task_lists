@@ -10,7 +10,6 @@ var AllListsView = Backbone.View.extend({
   render: function() {
   	this.$el.html(this.template());
   	this.collection.each(function(list) {
-  		console.log("rendered a list")
 			var view = new ListView({model: list})
 			$('.all-lists').append(view.render().html())
 		})
