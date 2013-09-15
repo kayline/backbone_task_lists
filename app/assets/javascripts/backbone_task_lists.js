@@ -5,6 +5,7 @@ window.BackboneTaskLists = {
   Routers: {},
   initialize: function() {
     new TaskRouter;
+    new ListRouter;
     Backbone.history.start();
   }
 };

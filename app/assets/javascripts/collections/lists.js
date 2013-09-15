@@ -1,5 +1,4 @@
-BackboneTaskLists.Collections.Lists = Backbone.Collection.extend({
-
-  model: BackboneTaskLists.Models.List
-
+var AllLists = Backbone.Collection.extend({
+  model: List,
+  url: '/lists'
 });
