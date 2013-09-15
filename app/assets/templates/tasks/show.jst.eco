@@ -1,1 +1,1 @@
-<div><%= @task.get 'description' %></div>
+<div class='task-item'><%= @task.get 'description' %></div>

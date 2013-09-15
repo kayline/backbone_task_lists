@@ -1,0 +1,40 @@
+.top-nav {
+	list-style-type: none;
+	width: 100%;
+	height: 2em;
+	background: #aaa;
+}
+
+.top-nav li {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	padding-top: .5em;
+}
+
+.top-nav li a {
+	color: black;
+}
+
+.container {
+	width: 700px;
+	margin: 0px auto;
+}
+
+.title {
+	clear: both;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.task-item {
+	width: 30%;
+	background: #ccc;
+	margin-top: 10px;
+}
+
+.list-item {
+	width: 30%;
+	background: #ccc;
+	margin-top: 10px;
+}
