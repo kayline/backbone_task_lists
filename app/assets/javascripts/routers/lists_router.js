@@ -2,6 +2,7 @@ var ListRouter = Backbone.Router.extend({
 
 	routes: {
 		"lists": 					"index",
+		"lists/:id": 			"show",
 	},
 
 	index: function() {
@@ -10,8 +11,11 @@ var ListRouter = Backbone.Router.extend({
 		all_lists.fetch({reset:true})
 	},
 
-	show: function() {
-
+	show: function(params) {
+		console.log(params);
+		list = new List({ id: params });
+		listView = new DetailedListView({model: list})
+		list.fetch();
 	}
 
 

@@ -11,4 +11,14 @@ class ListsController < ApplicationController
 			format.json {render json: @lists}
 		end
 	end
+
+	def show
+		@list = List.find(params[:id])
+
+		respond_to do |format|
+			format.html
+			format.json {render json: @list}
+		end
+	end
+
 end
