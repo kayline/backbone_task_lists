@@ -8,7 +8,10 @@ var DetailedListView = Backbone.View.extend({
 
 	render: function() {
 		this.$el.html(this.template());
-		console.log(this.model);
-		// return $(this.el).html(this.template({list: this.model}))
+		this.model.attributes.tasks.forEach(function(task) {
+			newTask = new Task(task)
+			taskView = new TaskView({model: newTask})
+			$('.tasks').append(taskView.render().html())
+		})
 	}
 })

@@ -12,11 +12,9 @@ var ListRouter = Backbone.Router.extend({
 	},
 
 	show: function(params) {
-		console.log(params);
 		list = new List({ id: params });
 		listView = new DetailedListView({model: list})
-		list.fetch();
+		list.fetch()
 	}
-
 
 });
